@@ -2,8 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
-
+subtitle: <a href='#'>Graduate Student</a>. IISc, Bangalore.
 profile:
   align: right
   image: prof_pic.jpg
@@ -19,5 +18,5 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a PhD Student at [Department of Computer Science and Automation](csa.iisc.ac.in), [Indian Institute of Science, Bangalore](iisc.ac.in).
-. My broad research interests include dynamical systems, mean field games and optimization. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a PhD Student at [Department of Computer Science and Automation](https://csa.iisc.ac.in), [Indian Institute of Science, Bangalore](https://iisc.ac.in).
+. I am advised by [Prof. Y Narahari](https://gtl.csa.iisc.ac.in/hari) and [Prof. Chandramani Singh](https://faculty.dese.iisc.ac.in/chandramani/). My broad research interests include dynamical systems, mean field games and optimization. 
