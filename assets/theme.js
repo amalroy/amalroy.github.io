@@ -1,4 +1,4 @@
-// Initialize dark mode on page load based on localStorage or system preference
+// Ensure this file exists and is correct:
 (function() {
     const userPref = localStorage.getItem('theme');
     if (
