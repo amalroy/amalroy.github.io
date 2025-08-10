@@ -1,4 +1,4 @@
-// Ensure this file exists and is correct:
+// (Delete this file)
 (function() {
     const userPref = localStorage.getItem('theme');
     if (
