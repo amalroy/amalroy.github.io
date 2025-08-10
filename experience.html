@@ -19,6 +19,9 @@
                 <a href="experience.html" class="hover:text-blue-500 dark:hover:text-blue-400">Experience</a>
                 <a href="contact.html" class="hover:text-blue-500 dark:hover:text-blue-400">Contact</a>
             </nav>
+            <button id="dark-toggle" class="ml-4 px-2 py-1 rounded bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 text-sm">
+                <span id="dark-toggle-icon">🌙</span>
+            </button>
         </div>
     </header>
     <main class="max-w-5xl mx-auto p-6">
@@ -32,5 +35,26 @@
             <li>Quantitative Researcher (2025-)</li>
         </ul>
     </main>
+    <script>
+      // Dark mode toggle logic
+      const html = document.documentElement;
+      const toggle = document.getElementById('dark-toggle');
+      const icon = document.getElementById('dark-toggle-icon');
+      if (localStorage.theme === 'dark' ||
+          (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        html.classList.add('dark');
+        icon.textContent = '☀️';
+      }
+      toggle.addEventListener('click', () => {
+        html.classList.toggle('dark');
+        if (html.classList.contains('dark')) {
+          localStorage.theme = 'dark';
+          icon.textContent = '☀️';
+        } else {
+          localStorage.theme = 'light';
+          icon.textContent = '🌙';
+        }
+      });
+    </script>
 </body>
 </html>
