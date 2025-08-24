@@ -6,51 +6,160 @@
     <title>Research - Amal Roy</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      tailwind.config = { darkMode: 'class' };
+      tailwind.config = { 
+        darkMode: 'class'
+      };
     </script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans dark:bg-gray-900 dark:text-gray-100">
-    <header class="bg-white shadow dark:bg-gray-800">
-        <div class="max-w-5xl mx-auto p-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold">Research</h1>
-            <nav class="space-x-4">
-                <a href="index.html" class="hover:text-blue-500 dark:hover:text-blue-400">Home</a>
-                <a href="research.html" class="hover:text-blue-500 dark:hover:text-blue-400">Research</a>
-                <a href="experience.html" class="hover:text-blue-500 dark:hover:text-blue-400">Experience</a>
-                <a href="contact.html" class="hover:text-blue-500 dark:hover:text-blue-400">Contact</a>
+<body class="bg-gradient-to-br from-slate-50 via-white to-slate-100 text-slate-800 font-sans dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 dark:text-slate-100 min-h-screen">
+    <header class="bg-white/80 backdrop-blur-md shadow-sm border-b border-slate-200/50 sticky top-0 z-50 dark:bg-slate-800/80 dark:border-slate-700/50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Research</h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="relative px-3 py-2 text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 transition-colors duration-200 group">
+                    <span class="relative z-10">Home</span>
+                    <div class="absolute inset-0 rounded-lg bg-blue-50 dark:bg-blue-950/50 scale-0 group-hover:scale-100 transition-transform duration-200"></div>
+                </a>
+                <a href="research.html" class="relative px-3 py-2 text-blue-600 dark:text-blue-400 font-medium">
+                    <span class="relative z-10">Research</span>
+                    <div class="absolute inset-0 rounded-lg bg-blue-50 dark:bg-blue-950/50 scale-100"></div>
+                </a>
+                <a href="experience.html" class="relative px-3 py-2 text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 transition-colors duration-200 group">
+                    <span class="relative z-10">Experience</span>
+                    <div class="absolute inset-0 rounded-lg bg-blue-50 dark:bg-blue-950/50 scale-0 group-hover:scale-100 transition-transform duration-200"></div>
+                </a>
+                <a href="contact.html" class="relative px-3 py-2 text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 transition-colors duration-200 group">
+                    <span class="relative z-10">Contact</span>
+                    <div class="absolute inset-0 rounded-lg bg-blue-50 dark:bg-blue-950/50 scale-0 group-hover:scale-100 transition-transform duration-200"></div>
+                </a>
             </nav>
-            <button id="dark-toggle" class="ml-4 px-2 py-1 rounded bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 text-sm">
+            <button id="dark-toggle" class="ml-4 px-3 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-700 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-200 text-lg transition-all duration-200 hover:scale-105">
                 <span id="dark-toggle-icon">🌙</span>
             </button>
         </div>
     </header>
-    <main class="max-w-5xl mx-auto p-6">
-        <h2 class="text-2xl font-bold mb-4">Research Interests</h2>
-        <ul class="list-disc pl-6">
-            <li>Mean Field Games</li>
-            <li>Optimal Control</li>
-            <li>Complex Systems</li>
-            <li>Game Theory</li>
-            <li>Machine Learning</li>
-            <li>Epidemic Modeling</li>
-            <li>Fluid Dynamics & Turbulence</li>
-        </ul>
-        <h2 class="text-2xl font-bold mt-8 mb-4">Publications</h2>
-        <ul class="list-decimal pl-6 space-y-2">
-            <li>
-                <strong>A. Roy</strong>, C. Singh and Y. Narahari, "To Test or Not: Incentivizing Individuals in a Population to Achieve Socially Optimal Testing in Epidemics," 2024 IEEE 20th International Conference on Automation Science and Engineering (CASE), Bari, Italy, 2024, pp. 2449-2456, doi: <a href="https://doi.org/10.1109/CASE59546.2024.10711735" class="text-blue-600 underline dark:text-blue-400">10.1109/CASE59546.2024.10711735</a>.
-            </li>
-            <li>
-                <strong>A. Roy</strong>, C. Singh, and Y. Narahari, “Recent advances in modeling and control of epidemics using a mean field approach,” Sādhanā, vol. 48, no. 4, p. 207, Sep. 2023, doi: <a href="https://doi.org/10.1007/s12046-023-02268-z" class="text-blue-600 underline dark:text-blue-400">10.1007/s12046-023-02268-z</a>.
-            </li>
-            <li>
-                A. Gupta, <strong>A. Roy</strong>, A. Saha, and S. S. Ray, “Flocking of active particles in a turbulent flow,” Phys. Rev. Fluids, vol. 5, no. 5, p. 052601, May 2020, doi: <a href="https://doi.org/10.1103/PhysRevFluids.5.052601" class="text-blue-600 underline dark:text-blue-400">10.1103/PhysRevFluids.5.052601</a>.
-            </li>
-            <li>
-                <strong>A. Roy</strong>, A. Gupta, and S. S. Ray, “Inertial spheroids in homogeneous, isotropic turbulence,” Phys. Rev. E, vol. 98, no. 2, p. 021101, Aug. 2018, doi: <a href="https://doi.org/10.1103/PhysRevE.98.021101" class="text-blue-600 underline dark:text-blue-400">10.1103/PhysRevE.98.021101</a>.
-            </li>
-        </ul>
+    
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <!-- Research Interests Section -->
+        <section class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4 bg-gradient-to-r from-slate-800 via-blue-700 to-purple-700 bg-clip-text text-transparent dark:from-slate-100 dark:via-blue-300 dark:to-purple-300">
+                    Research Interests
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-slate-200/50 dark:border-slate-700/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12a3 3 0 100-6 3 3 0 000 6z"/><path fill-rule="evenodd" d="M2 10a8 8 0 1116 0 8 8 0 01-16 0zm8-6a6 6 0 100 12A6 6 0 0010 4z" clip-rule="evenodd"/></svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2 text-slate-800 dark:text-slate-200">Mean Field Games</h3>
+                </div>
+                <div class="bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-slate-200/50 dark:border-slate-700/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/></svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2 text-slate-800 dark:text-slate-200">Optimal Control</h3>
+                </div>
+                <div class="bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-slate-200/50 dark:border-slate-700/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-12 h-12 bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/></svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2 text-slate-800 dark:text-slate-200">Complex Systems</h3>
+                </div>
+                <div class="bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-slate-200/50 dark:border-slate-700/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-12 h-12 bg-gradient-to-r from-orange-500 to-orange-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/><path fill-rule="evenodd" d="M4 5a2 2 0 012-2v1a1 1 0 002 0V3a2 2 0 012 0v1a1 1 0 002 0V3a2 2 0 012 2v6h-1.586l-.707-.707A1 1 0 0011 8H9a1 1 0 00-.707.293L7.586 9H6V5z" clip-rule="evenodd"/><path d="M6 12a2 2 0 104 0h8a2 2 0 100-4H6v4z"/></svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2 text-slate-800 dark:text-slate-200">Game Theory</h3>
+                </div>
+                <div class="bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-slate-200/50 dark:border-slate-700/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-12 h-12 bg-gradient-to-r from-pink-500 to-pink-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/></svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2 text-slate-800 dark:text-slate-200">Machine Learning</h3>
+                </div>
+                <div class="bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-slate-200/50 dark:border-slate-700/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-12 h-12 bg-gradient-to-r from-red-500 to-red-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z" clip-rule="evenodd"/></svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2 text-slate-800 dark:text-slate-200">Epidemic Modeling</h3>
+                </div>
+                <div class="bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-slate-200/50 dark:border-slate-700/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 md:col-span-2 lg:col-span-1">
+                    <div class="w-12 h-12 bg-gradient-to-r from-cyan-500 to-cyan-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zM1 15a1 1 0 011-1h6a1 1 0 011 1v2a3 3 0 11-6 0v-2zM12 4a2 2 0 012-2h2a2 2 0 012 2v11a3 3 0 11-6 0V4zm7 11a1 1 0 01-1 1h-6a1 1 0 01-1-1v2a3 3 0 106 0v-2z" clip-rule="evenodd"/></svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2 text-slate-800 dark:text-slate-200">Fluid Dynamics & Turbulence</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section>
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4 bg-gradient-to-r from-slate-800 via-blue-700 to-purple-700 bg-clip-text text-transparent dark:from-slate-100 dark:via-blue-300 dark:to-purple-300">
+                    Publications
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
+            </div>
+            <div class="space-y-6">
+                <div class="bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-slate-200/50 dark:border-slate-700/50 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">1</div>
+                        <div>
+                            <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                                <strong class="text-slate-900 dark:text-slate-100">A. Roy</strong>, C. Singh and Y. Narahari, "To Test or Not: Incentivizing Individuals in a Population to Achieve Socially Optimal Testing in Epidemics," 2024 IEEE 20th International Conference on Automation Science and Engineering (CASE), Bari, Italy, 2024, pp. 2449-2456, doi: <a href="https://doi.org/10.1109/CASE59546.2024.10711735" class="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium transition-colors">10.1109/CASE59546.2024.10711735</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-slate-200/50 dark:border-slate-700/50 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-8 h-8 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">2</div>
+                        <div>
+                            <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                                <strong class="text-slate-900 dark:text-slate-100">A. Roy</strong>, C. Singh, and Y. Narahari, "Recent advances in modeling and control of epidemics using a mean field approach," Sādhanā, vol. 48, no. 4, p. 207, Sep. 2023, doi: <a href="https://doi.org/10.1007/s12046-023-02268-z" class="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium transition-colors">10.1007/s12046-023-02268-z</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-slate-200/50 dark:border-slate-700/50 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-8 h-8 bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">3</div>
+                        <div>
+                            <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                                A. Gupta, <strong class="text-slate-900 dark:text-slate-100">A. Roy</strong>, A. Saha, and S. S. Ray, "Flocking of active particles in a turbulent flow," Phys. Rev. Fluids, vol. 5, no. 5, p. 052601, May 2020, doi: <a href="https://doi.org/10.1103/PhysRevFluids.5.052601" class="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium transition-colors">10.1103/PhysRevFluids.5.052601</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-slate-200/50 dark:border-slate-700/50 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-8 h-8 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">4</div>
+                        <div>
+                            <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                                <strong class="text-slate-900 dark:text-slate-100">A. Roy</strong>, A. Gupta, and S. S. Ray, "Inertial spheroids in homogeneous, isotropic turbulence," Phys. Rev. E, vol. 98, no. 2, p. 021101, Aug. 2018, doi: <a href="https://doi.org/10.1103/PhysRevE.98.021101" class="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium transition-colors">10.1103/PhysRevE.98.021101</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    
+    <!-- Footer -->
+    <footer class="relative mt-20 bg-gradient-to-r from-slate-50 to-white dark:from-slate-900 dark:to-slate-800 border-t border-slate-200/50 dark:border-slate-700/50">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-50/30 via-transparent to-purple-50/30 dark:from-blue-950/30 dark:to-purple-950/30"></div>
+        <div class="relative max-w-6xl mx-auto px-6 py-8 text-center">
+            <div class="text-slate-500 text-sm dark:text-slate-400 mb-2">
+                © 2025 Amal Roy. All rights reserved.
+            </div>
+            <div class="text-xs text-slate-400 dark:text-slate-500">
+                Built with modern web technologies
+            </div>
+        </div>
+    </footer>
+    
     <script>
       // Dark mode toggle logic
       const html = document.documentElement;

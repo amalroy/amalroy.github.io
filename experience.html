@@ -6,35 +6,144 @@
     <title>Experience - Amal Roy</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      tailwind.config = { darkMode: 'class' };
+      tailwind.config = { 
+        darkMode: 'class'
+      };
     </script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans dark:bg-gray-900 dark:text-gray-100">
-    <header class="bg-white shadow dark:bg-gray-800">
-        <div class="max-w-5xl mx-auto p-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold">Experience</h1>
-            <nav class="space-x-4">
-                <a href="index.html" class="hover:text-blue-500 dark:hover:text-blue-400">Home</a>
-                <a href="research.html" class="hover:text-blue-500 dark:hover:text-blue-400">Research</a>
-                <a href="experience.html" class="hover:text-blue-500 dark:hover:text-blue-400">Experience</a>
-                <a href="contact.html" class="hover:text-blue-500 dark:hover:text-blue-400">Contact</a>
+<body class="bg-gradient-to-br from-slate-50 via-white to-slate-100 text-slate-800 font-sans dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 dark:text-slate-100 min-h-screen">
+    <header class="bg-white/80 backdrop-blur-md shadow-sm border-b border-slate-200/50 sticky top-0 z-50 dark:bg-slate-800/80 dark:border-slate-700/50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Experience</h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="relative px-3 py-2 text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 transition-colors duration-200 group">
+                    <span class="relative z-10">Home</span>
+                    <div class="absolute inset-0 rounded-lg bg-blue-50 dark:bg-blue-950/50 scale-0 group-hover:scale-100 transition-transform duration-200"></div>
+                </a>
+                <a href="research.html" class="relative px-3 py-2 text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 transition-colors duration-200 group">
+                    <span class="relative z-10">Research</span>
+                    <div class="absolute inset-0 rounded-lg bg-blue-50 dark:bg-blue-950/50 scale-0 group-hover:scale-100 transition-transform duration-200"></div>
+                </a>
+                <a href="experience.html" class="relative px-3 py-2 text-blue-600 dark:text-blue-400 font-medium">
+                    <span class="relative z-10">Experience</span>
+                    <div class="absolute inset-0 rounded-lg bg-blue-50 dark:bg-blue-950/50 scale-100"></div>
+                </a>
+                <a href="contact.html" class="relative px-3 py-2 text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 transition-colors duration-200 group">
+                    <span class="relative z-10">Contact</span>
+                    <div class="absolute inset-0 rounded-lg bg-blue-50 dark:bg-blue-950/50 scale-0 group-hover:scale-100 transition-transform duration-200"></div>
+                </a>
             </nav>
-            <button id="dark-toggle" class="ml-4 px-2 py-1 rounded bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 text-sm">
+            <button id="dark-toggle" class="ml-4 px-3 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-700 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-200 text-lg transition-all duration-200 hover:scale-105">
                 <span id="dark-toggle-icon">🌙</span>
             </button>
         </div>
     </header>
-    <main class="max-w-5xl mx-auto p-6">
-        <h2 class="text-2xl font-bold mb-4">Academic</h2>
-        <ul class="list-disc pl-6">
-            <li>PhD and M. Tech (Research), Department of Computer Science and Automation, Indian Institute of Science, Bangalore. Focus: Mean Field Games & Epidemic Modeling</li>
-            <li>Bachelor of Science, Mathematics Major, Physics Minor. Thesis: Dynamics of Particles in Turbulence</li>
-        </ul>
-        <h2 class="text-2xl font-bold mt-8 mb-4">Industry</h2>
-        <ul class="list-disc pl-6">
-            <li>Quantitative Researcher (2025-)</li>
-        </ul>
+    
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <!-- Academic Experience -->
+        <section class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4 bg-gradient-to-r from-slate-800 via-blue-700 to-purple-700 bg-clip-text text-transparent dark:from-slate-100 dark:via-blue-300 dark:to-purple-300">
+                    Academic Background
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="space-y-8">
+                <div class="bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-slate-200/50 dark:border-slate-700/50 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-start space-x-6">
+                        <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2h2zm4-3a1 1 0 00-1 1v1h2V4a1 1 0 00-1-1zM4 9a1 1 0 000 2v5a1 1 0 001 1h1a1 1 0 001-1v-1a1 1 0 011-1h2a1 1 0 011 1v1a1 1 0 001 1h1a1 1 0 001-1v-5a1 1 0 100-2H4z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-3">PhD & M. Tech (Research)</h3>
+                            <p class="text-lg text-blue-600 dark:text-blue-400 font-semibold mb-2">Indian Institute of Science, Bangalore</p>
+                            <p class="text-slate-700 dark:text-slate-300 mb-4">Department of Computer Science and Automation</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium">Mean Field Games</span>
+                                <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-sm font-medium">Epidemic Modeling</span>
+                                <span class="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-200 rounded-full text-sm font-medium">Optimal Control</span>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-400">
+                                <strong class="text-slate-700 dark:text-slate-300">Thesis:</strong> Mean Field Based Investigations for Inducing Socially Optimal Epidemic Behavior in Rational Individuals
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-slate-200/50 dark:border-slate-700/50 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-start space-x-6">
+                        <div class="w-16 h-16 bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-3">Bachelor of Science</h3>
+                            <p class="text-lg text-emerald-600 dark:text-emerald-400 font-semibold mb-2">Indian Institute of Science, Bangalore</p>
+                            <p class="text-slate-700 dark:text-slate-300 mb-4">Mathematics Major, Physics Minor</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900/50 text-orange-800 dark:text-orange-200 rounded-full text-sm font-medium">Fluid Dynamics</span>
+                                <span class="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/50 text-cyan-800 dark:text-cyan-200 rounded-full text-sm font-medium">Turbulence</span>
+                                <span class="px-3 py-1 bg-pink-100 dark:bg-pink-900/50 text-pink-800 dark:text-pink-200 rounded-full text-sm font-medium">Particle Dynamics</span>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-400">
+                                <strong class="text-slate-700 dark:text-slate-300">Thesis:</strong> Dynamics of Particles in Turbulence
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industry Experience -->
+        <section>
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4 bg-gradient-to-r from-slate-800 via-blue-700 to-purple-700 bg-clip-text text-transparent dark:from-slate-100 dark:via-blue-300 dark:to-purple-300">
+                    Professional Experience
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-slate-200/50 dark:border-slate-700/50 hover:shadow-xl transition-all duration-300">
+                <div class="flex items-start space-x-6">
+                    <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100">Quantitative Researcher</h3>
+                            <span class="text-sm text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-700 px-3 py-1 rounded-full">2025 - Present</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-200 rounded-full text-sm font-medium">Quantitative Analysis</span>
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium">Mathematical Modeling</span>
+                            <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900/50 text-indigo-800 dark:text-indigo-200 rounded-full text-sm font-medium">Data Science</span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400">Applying advanced mathematical and statistical techniques to solve complex problems in quantitative finance and research.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    
+    <!-- Footer -->
+    <footer class="relative mt-20 bg-gradient-to-r from-slate-50 to-white dark:from-slate-900 dark:to-slate-800 border-t border-slate-200/50 dark:border-slate-700/50">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-50/30 via-transparent to-purple-50/30 dark:from-blue-950/30 dark:to-purple-950/30"></div>
+        <div class="relative max-w-6xl mx-auto px-6 py-8 text-center">
+            <div class="text-slate-500 text-sm dark:text-slate-400 mb-2">
+                © 2025 Amal Roy. All rights reserved.
+            </div>
+            <div class="text-xs text-slate-400 dark:text-slate-500">
+                Built with modern web technologies
+            </div>
+        </div>
+    </footer>
+    
     <script>
       // Dark mode toggle logic
       const html = document.documentElement;

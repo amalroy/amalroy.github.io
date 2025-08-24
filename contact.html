@@ -6,30 +6,171 @@
     <title>Contact - Amal Roy</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      tailwind.config = { darkMode: 'class' };
+      tailwind.config = { 
+        darkMode: 'class'
+      };
     </script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans dark:bg-gray-900 dark:text-gray-100">
-    <header class="bg-white shadow dark:bg-gray-800">
-        <div class="max-w-5xl mx-auto p-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold">Contact</h1>
-            <nav class="space-x-4">
-                <a href="index.html" class="hover:text-blue-500 dark:hover:text-blue-400">Home</a>
-                <a href="research.html" class="hover:text-blue-500 dark:hover:text-blue-400">Research</a>
-                <a href="experience.html" class="hover:text-blue-500 dark:hover:text-blue-400">Experience</a>
-                <a href="contact.html" class="hover:text-blue-500 dark:hover:text-blue-400">Contact</a>
+<body class="bg-gradient-to-br from-slate-50 via-white to-slate-100 text-slate-800 font-sans dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 dark:text-slate-100 min-h-screen">
+    <header class="bg-white/80 backdrop-blur-md shadow-sm border-b border-slate-200/50 sticky top-0 z-50 dark:bg-slate-800/80 dark:border-slate-700/50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Contact</h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="relative px-3 py-2 text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 transition-colors duration-200 group">
+                    <span class="relative z-10">Home</span>
+                    <div class="absolute inset-0 rounded-lg bg-blue-50 dark:bg-blue-950/50 scale-0 group-hover:scale-100 transition-transform duration-200"></div>
+                </a>
+                <a href="research.html" class="relative px-3 py-2 text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 transition-colors duration-200 group">
+                    <span class="relative z-10">Research</span>
+                    <div class="absolute inset-0 rounded-lg bg-blue-50 dark:bg-blue-950/50 scale-0 group-hover:scale-100 transition-transform duration-200"></div>
+                </a>
+                <a href="experience.html" class="relative px-3 py-2 text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 transition-colors duration-200 group">
+                    <span class="relative z-10">Experience</span>
+                    <div class="absolute inset-0 rounded-lg bg-blue-50 dark:bg-blue-950/50 scale-0 group-hover:scale-100 transition-transform duration-200"></div>
+                </a>
+                <a href="contact.html" class="relative px-3 py-2 text-blue-600 dark:text-blue-400 font-medium">
+                    <span class="relative z-10">Contact</span>
+                    <div class="absolute inset-0 rounded-lg bg-blue-50 dark:bg-blue-950/50 scale-100"></div>
+                </a>
             </nav>
-            <button id="dark-toggle" class="ml-4 px-2 py-1 rounded bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 text-sm">
+            <button id="dark-toggle" class="ml-4 px-3 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-700 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-200 text-lg transition-all duration-200 hover:scale-105">
                 <span id="dark-toggle-icon">🌙</span>
             </button>
         </div>
     </header>
-    <main class="max-w-5xl mx-auto p-6">
-        <p><a href="mailto:amalchettisseril@gmail.com" class="text-blue-500 hover:underline dark:text-blue-400">Email</a></p>
-        <p><a href="https://github.com/amalroy" class="text-blue-500 hover:underline dark:text-blue-400" target="_blank" rel="noopener">GitHub</a></p>
-        <p><a href="https://linkedin.com/in/amal-roy-715a89198" class="text-blue-500 hover:underline dark:text-blue-400" target="_blank" rel="noopener">LinkedIn</a></p>
-        <p><a href="https://scholar.google.com/citations?user=C0X9drsAAAAJ" class="text-blue-500 hover:underline dark:text-blue-400" target="_blank" rel="noopener">Google Scholar</a></p>
+    
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold mb-4 bg-gradient-to-r from-slate-800 via-blue-700 to-purple-700 bg-clip-text text-transparent dark:from-slate-100 dark:via-blue-300 dark:to-purple-300">
+                Let's Connect
+            </h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
+            <p class="mt-6 text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
+                I'm always interested in discussing research opportunities, collaborations, or just having a conversation about mathematics and technology.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <!-- Email Card -->
+            <div class="bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-slate-200/50 dark:border-slate-700/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div class="flex items-center space-x-4 mb-6">
+                    <div class="w-14 h-14 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center">
+                        <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">Email</h3>
+                        <p class="text-slate-600 dark:text-slate-400">Get in touch directly</p>
+                    </div>
+                </div>
+                <a href="mailto:amalchettisseril@gmail.com" 
+                   class="inline-flex items-center justify-center w-full px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                    </svg>
+                    amalchettisseril@gmail.com
+                </a>
+            </div>
+
+            <!-- GitHub Card -->
+            <div class="bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-slate-200/50 dark:border-slate-700/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div class="flex items-center space-x-4 mb-6">
+                    <div class="w-14 h-14 bg-gradient-to-r from-slate-700 to-slate-800 rounded-xl flex items-center justify-center">
+                        <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">GitHub</h3>
+                        <p class="text-slate-600 dark:text-slate-400">View my code repositories</p>
+                    </div>
+                </div>
+                <a href="https://github.com/amalroy" target="_blank" rel="noopener"
+                   class="inline-flex items-center justify-center w-full px-6 py-3 bg-gradient-to-r from-slate-700 to-slate-800 hover:from-slate-800 hover:to-slate-900 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"/>
+                    </svg>
+                    @amalroy
+                </a>
+            </div>
+
+            <!-- LinkedIn Card -->
+            <div class="bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-slate-200/50 dark:border-slate-700/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div class="flex items-center space-x-4 mb-6">
+                    <div class="w-14 h-14 bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl flex items-center justify-center">
+                        <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">LinkedIn</h3>
+                        <p class="text-slate-600 dark:text-slate-400">Professional network</p>
+                    </div>
+                </div>
+                <a href="https://linkedin.com/in/amal-roy-715a89198" target="_blank" rel="noopener"
+                   class="inline-flex items-center justify-center w-full px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"/>
+                    </svg>
+                    Connect on LinkedIn
+                </a>
+            </div>
+
+            <!-- Google Scholar Card -->
+            <div class="bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-slate-200/50 dark:border-slate-700/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div class="flex items-center space-x-4 mb-6">
+                    <div class="w-14 h-14 bg-gradient-to-r from-green-600 to-green-700 rounded-xl flex items-center justify-center">
+                        <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">Google Scholar</h3>
+                        <p class="text-slate-600 dark:text-slate-400">Academic publications</p>
+                    </div>
+                </div>
+                <a href="https://scholar.google.com/citations?user=C0X9drsAAAAJ" target="_blank" rel="noopener"
+                   class="inline-flex items-center justify-center w-full px-6 py-3 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" clip-rule="evenodd"/>
+                    </svg>
+                    View Publications
+                </a>
+            </div>
+        </div>
+
+        <!-- Additional Contact Information -->
+        <div class="mt-16 text-center">
+            <div class="bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-slate-200/50 dark:border-slate-700/50 max-w-2xl mx-auto">
+                <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4">
+                    Collaboration & Research Inquiries
+                </h3>
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                    I'm particularly interested in collaborating on projects involving <strong class="text-blue-600 dark:text-blue-400">mean field games</strong>, 
+                    <strong class="text-purple-600 dark:text-purple-400">optimal control theory</strong>, and 
+                    <strong class="text-emerald-600 dark:text-emerald-400">epidemic modeling</strong>. 
+                    Whether you're a researcher, student, or industry professional, I'd love to hear from you!
+                </p>
+            </div>
+        </div>
     </main>
+    
+    <!-- Footer -->
+    <footer class="relative mt-20 bg-gradient-to-r from-slate-50 to-white dark:from-slate-900 dark:to-slate-800 border-t border-slate-200/50 dark:border-slate-700/50">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-50/30 via-transparent to-purple-50/30 dark:from-blue-950/30 dark:to-purple-950/30"></div>
+        <div class="relative max-w-6xl mx-auto px-6 py-8 text-center">
+            <div class="text-slate-500 text-sm dark:text-slate-400 mb-2">
+                © 2025 Amal Roy. All rights reserved.
+            </div>
+            <div class="text-xs text-slate-400 dark:text-slate-500">
+                Built with modern web technologies
+            </div>
+        </div>
+    </footer>
+    
     <script>
       // Dark mode toggle logic
       const html = document.documentElement;
